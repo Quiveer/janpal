@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lykmapipo/themify-icons@0.1.2/css/themify-icons.css">
+  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+  <%- include ('./partials/head.ejs') %>
+  <title>Team</title>
+   
+</head>
+<body>
+
+  <%- include ('./partials/navbar.ejs') %>
+
+  <section class="team">
+    <div class="container">
+        <h1>Our Team</h1>
+
+        <div class="team-container">
+          
+          <div class="card">
+            <div class="box">
+                <img src="img/chica.jpg" alt="team img" />
+                <h4>John Doe</h4>
+                <h5>Manager</h5>
+                <p>Lorem ipsum dolor sit amet alias facere, quos commodi, praesentium illo.</p>
+            </div>
+        </div>
+
+        <div class="card">
+          <div class="box">
+              <img src="img/chica.jpg" alt="team img" />
+              <h4>John Doe</h4>
+              <h5>Manager</h5>
+              <p>Lorem ipsum dolor sit amet alias facere, quos commodi, praesentium illo.</p>
+          </div>
+      </div>
+
+      <div class="card">
+        <div class="box">
+            <img src="img/chica.jpg" alt="team img" />
+            <h4>John Doe</h4>
+            <h5>Manager</h5>
+            <p>Lorem ipsum dolor sit amet alias facere, quos commodi, praesentium illo.</p>
+        </div>
+    </div>
+    
+    <div class="card">
+      <div class="box">
+          <img src="img/chica.jpg" alt="team img" />
+          <h4>John Doe</h4>
+          <h5>Manager</h5>
+          <p>Lorem ipsum dolor sit amet alias facere, quos commodi, praesentium illo.</p>
+      </div>
+  </div>
+
+        </div>
+
+    </div>
+</section>
+
+<footer>
+  <%- include ('./partials/footer.ejs') %>
+</footer>
+
+    <!-- JavaScript -->
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/easytimer@1.1.1/src/easytimer.min.js"></script>
+
+    <script>
+    var timer = new Timer();
+    timer.start({countdown: true, startValues: {seconds: 1000}});
+
+     document.querySelector('.values').innerHTML = timer.getTimeValues().
+        toString();
+
+    timer.addEventListener('secondsUpdated', function (e) {
+        document.querySelector('.values').innerHTML = timer.getTimeValues().
+        toString();
+    });
+    </script>
+
+</body>
+</html>

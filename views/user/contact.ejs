@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Contact</title>
+    <%- include ('./partials/head.ejs') %>
+
+</head>
+<body>
+
+  <%- include ('./partials/navbar.ejs') %>
+  
+<br>
+<div class="container">
+  <h1 style="text-align: center;">Talk To Us</h1> <br>
+  <div class="row">
+    <div class="col-md-4" style="display: inline-block;">
+      <div>
+        <span class="left-contact">
+          <i class="fa fa-map-marker fa-2x" aria-hidden="true"></i> &nbsp; <h3>Location</h3>
+        </span>
+        <p>8th floor, 379 Hudson</p> 
+        <p>St, Nairobi, Kenya 10018</p>
+      </div>
+      <br>
+      <div>
+        <span class="left-contact">
+          <i class="fa fa-phone fa-2x" aria-hidden="true"></i> &nbsp; <h3>Call Us</h3>
+        </span>
+        <p><a href="tel:+254700000000">+254 700 000 000</a></p>
+        <p><a href="tel:+254712345678">+254 712 345 678</a></p>
+      </div>
+      <br>
+      <div>
+        <span class="left-contact">
+          <i class="fa fa-clock-o fa-2x" aria-hidden="true"></i> &nbsp; <h3>Open Hours</h3>
+        </span>
+        <p>Mon - Fri : 8:00am - 5:00pm</p>
+        <p>Sun       : 12:00pm - 6:00pm</p>
+      </div>
+    </div>
+    <div class="col-md-8">
+      <div class="jumbotron" style="padding-bottom: 80px;">
+        <form action="" method="post">
+          <div class="form-group row">
+            <label class="col-sm-2 col-form-label">Name</label>
+            <div class="col-sm-10">
+              <input type="text" class="form-control" placeholder="Name">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label class="col-sm-2 col-form-label">Email</label>
+            <div class="col-sm-10">
+              <input type="email" class="form-control" placeholder="Email">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label class="col-sm-2 col-form-label">Subject</label>
+            <div class="col-sm-10">
+              <input type="text" class="form-control" placeholder="Subject">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label class="col-sm-2 col-form-label">Message</label>
+            <div class="col-sm-10">
+              <textarea name="message" rows="5" type="text" class="form-control" placeholder="Message"></textarea>
+            </div>
+          </div>
+          <input style="float: right;" type="submit" value="Send Message" class="btn btn-primary">
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <%- include ('./partials/footer.ejs') %>
+</footer>
+
+  </body>
+  </html>

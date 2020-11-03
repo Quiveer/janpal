@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <title>Blog</title>
+
+    <style>
+  form.example input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 80%;
+  background: #f1f1f1;
+}
+
+/* Style the submit button */
+form.example button {
+  float: left;
+  width: 20%;
+  padding: 10px;
+  background: #2196F3;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none; /* Prevent double borders */
+  cursor: pointer;
+}
+a {
+  color: black;
+}
+a:hover {
+  text-decoration: none;
+}
+hr {
+  background-color: blue;
+}
+    </style>
+
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light sticky-top" style="padding: 20px; background-color:purple; color: white;">
+    <a class="navbar-brand" href="#"><img src="" alt="Logo" style="color: white;"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="/" style="color: black;">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="gallery" style="color: black;">Gallery</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="services" style="color: black;">Services</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="blog" style="color: black;">Blog</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about" style="color: black;">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="team" style="color: black;">Team</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact" style="color: black;">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+<br>
+<div class="container-fluid">
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="/">Home</a></li>
+      <li class="breadcrumb-item"><a href="blog">Blog</a></li>
+      <li class="breadcrumb-item active" aria-current="page">2 pieces dreadlock</li>
+    </ol>
+  </nav>
+  <div class="row">
+    <div class="col-md-8">
+      <hr>
+      <!-- recurring -->
+        <div class="blog">
+          <img src="img/girl.jpg" alt="" width="100%" height="400px" style="border-radius: 20px;">
+          <span style="font-size: 35px;">2 PIECES DREADLOCK</span>
+          <p>by Sam | Tue Jun 02 2020 | cooking-recipe | 0 comments</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, modi? Nam numquam animi asperiores aut, earum, ipsum fugit recusandae sit dolorem excepturi consequuntur alias est rerum, maiores obcaecati molestias temporibus
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, modi? Nam numquam animi asperiores aut, earum, ipsum fugit recusandae sit dolorem excepturi consequuntur alias est rerum, maiores obcaecati molestias temporibus
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, modi? Nam numquam animi asperiores aut, earum, ipsum fugit recusandae sit dolorem excepturi consequuntur alias est rerum, maiores obcaecati molestias temporibus
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, modi? Nam numquam animi asperiores aut, earum, ipsum fugit recusandae sit dolorem excepturi consequuntur alias est rerum, maiores obcaecati molestias temporibus
+          </p>
+        </div>
+        <!-- end recurring -->
+        <div style="padding: 40px 30px;">
+          <span style="font-size: 30px;">LEAVE A COMMENT</span>
+          <form action="" method="post" style="width: 80%;">
+            <div class="input-group mb-3">
+              <input type="text" name="username" class="form-control" placeholder="Name" aria-label="Username">
+            </div>
+            <br>
+            <div class="input-group mb-3">
+              <textarea name="comment" id="" cols="30" rows="5" class="form-control" placeholder="Comment" aria-label="comment" aria-describedby="basic-addon1"></textarea>
+            </div>
+            <input type="submit" value="Post Comment" class="btn btn-primary" style="border-radius: 8px;">
+          </form>
+          <div style="padding-top: 40px;">
+            <span style="font-size: 25px;">COMMENTS</span><hr>
+          </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+      <hr>
+      <form class="example" action="action_page.php">
+        <input type="text" placeholder="Search.." name="search">
+        <button type="submit"><i class="fa fa-search"></i></button>
+      </form>
+
+      <h4><b>Recent Posts</b></h4>
+      <hr style="height: 5px;">
+      <ul class="list-group">
+        <li class="list-group-item">Cras justo odio</li>
+        <li class="list-group-item">Dapibus ac facilisis in</li>
+        <li class="list-group-item">Morbi leo risus</li>
+        <li class="list-group-item">Porta ac consectetur ac</li>
+        <li class="list-group-item">Vestibulum at eros</li>
+      </ul>
+
+      <h4><b>Category</b></h4>
+      <hr style="height: 5px;">
+      <ul class="list-group">
+        <li class="list-group-item">Hair and Braids</li>
+        <li class="list-group-item">Manicure</li>
+        <li class="list-group-item">Make up</li>
+        <li class="list-group-item">Spa</li>
+      </ul>
+
+      <h4><b>Archive</b></h4>
+      <hr style="height: 5px;">
+      <ul class="list-group">
+        <li class="list-group-item">Cras justo odio</li>
+        <li class="list-group-item">Dapibus ac facilisis in</li>
+        <li class="list-group-item">Morbi leo risus</li>
+        <li class="list-group-item">Porta ac consectetur ac</li>
+        <li class="list-group-item">Vestibulum at eros</li>
+      </ul>
+
+    </div>
+  </div>
+</div>
+
+<footer style="background-color: black; color: white; padding: 30px; text-align: center;">
+        <div class="txt17 p-r-20 p-t-5 p-b-5">
+            Copyright © 2020 All rights reserved
+        </div>
+    </div>
+</footer>
+
+  </body>
+  </html>

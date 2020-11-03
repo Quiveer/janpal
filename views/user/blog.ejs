@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Blog</title>
+    <%- include ('./partials/head.ejs') %>
+
+<style>
+form.example input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 80%;
+  background: #f1f1f1;
+}
+
+/* Style the submit button */
+form.example button {
+  float: left;
+  width: 20%;
+  padding: 10px;
+  background: #2196F3;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none; /* Prevent double borders */
+  cursor: pointer;
+}
+a {
+  color: black;
+}
+a:hover {
+  text-decoration: none;
+}
+hr {
+  background-color: blue;
+}
+</style>
+
+</head>
+<body>
+
+  <%- include ('./partials/navbar.ejs') %>
+
+<br>
+<div class="container-fluid">
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="/">Home</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Blog</li>
+    </ol>
+  </nav>
+  <div class="row">
+    <div class="col-md-8">
+      <hr>
+        <div class="blog">
+          <a href="blog-detail"><img src="img/girl.jpg" alt="" width="100%" height="400px" style="border-radius: 20px;"></a>
+          <span style="font-size: 35px;"><a href="blog-detail">2 PIECES DREADLOCK</a></span>
+          <p>by Sam | Tue Jun 02 2020 | cooking-recipe | 0 comments</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, modi? Nam numquam animi asperiores aut, earum, ipsum fugit recusandae sit dolorem excepturi consequuntur alias est rerum, maiores obcaecati molestias temporibus <a href="blog-detail">...</a></p>
+          <a href="blog-detail">Continue reading</a>
+        </div>
+    </div>
+    <div class="col-md-4">
+      <hr>
+      <form class="example" action="action_page.php">
+        <input type="text" placeholder="Search.." name="search">
+        <button type="submit"><i class="fa fa-search"></i></button>
+      </form>
+
+      <h4><b>Recent Posts</b></h4>
+      <hr style="height: 5px;">
+      <ul class="list-group">
+        <li class="list-group-item">Cras justo odio</li>
+        <li class="list-group-item">Dapibus ac facilisis in</li>
+        <li class="list-group-item">Morbi leo risus</li>
+        <li class="list-group-item">Porta ac consectetur ac</li>
+        <li class="list-group-item">Vestibulum at eros</li>
+      </ul>
+
+      <h4><b>Category</b></h4>
+      <hr style="height: 5px;">
+      <ul class="list-group">
+        <li class="list-group-item">Hair and Braids</li>
+        <li class="list-group-item">Manicure</li>
+        <li class="list-group-item">Make up</li>
+        <li class="list-group-item">Spa</li>
+      </ul>
+
+      <h4><b>Archive</b></h4>
+      <hr style="height: 5px;">
+      <ul class="list-group">
+        <li class="list-group-item">Cras justo odio</li>
+        <li class="list-group-item">Dapibus ac facilisis in</li>
+        <li class="list-group-item">Morbi leo risus</li>
+        <li class="list-group-item">Porta ac consectetur ac</li>
+        <li class="list-group-item">Vestibulum at eros</li>
+      </ul>
+
+    </div>
+  </div>
+</div>
+
+<footer>
+  <%- include ('./partials/footer.ejs') %>
+</footer>
+
+</body>
+</html>
