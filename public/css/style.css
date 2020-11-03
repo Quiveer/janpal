@@ -1,0 +1,257 @@
+/* .body
+{
+    background-color: rgb(199, 172, 199);
+} */
+.img-container {
+    overflow: hidden;
+  }
+  
+  .filterDiv {
+    padding: 5px;
+    float: left;
+    display: none; /* Hidden by default */
+  }
+
+  .filterDiv img {
+      border-radius: 10px;
+  }
+  
+  /* The "show" class is added to the filtered elements */
+  .show {
+    display: block;
+  }
+  
+  /* Add a dark background to the active button */
+  .btn.active {
+    background-color: #666;
+    color: white;
+  }
+
+  .img-detail {
+    padding: 10px;
+    color: blue;
+    font-size: 18px;
+    transform: translate(0, -60px);
+  }
+  .img-detail .btn {
+      float: right;
+  }
+  hr {
+      background-color: rgb(29, 29, 134);
+  }
+
+.team-container
+{
+    max-width: 1140px;
+    margin: auto;
+    position: relative;
+    min-height: 1px;
+}
+.team
+{
+    min-height: 100vh;
+    padding: 60px 15px;
+    background-color: lightgoldenrodyellow;
+    float: left;
+    width: 100%;
+}
+
+.team h1
+{
+    font-size: 36px;
+    font-family: sans-serif;
+    font-weight: 700;
+    color: black;
+    margin: 0;
+    padding-bottom: 60px;
+    text-align: center;
+}
+.team .card 
+{
+    width: 25%;
+    float: left;
+    padding: 0px 15px;
+}
+
+.team .card .box
+{
+    padding: 15px;
+    background-color: plum;
+    border-radius: 5px;
+    transition: margin 1s ease,box-shadow 1s ease;
+}
+
+.team .card .box:hover
+{
+    margin-top: -15px;
+    box-shadow: 0px 0px 40px black;
+}
+.team .card .box img
+{
+    width: 150px;
+    display: block;
+    margin: 10px auto;
+    border-radius: 50%;
+}
+
+.team .card .box h4
+{
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: 700;
+    margin: 20px 0px 10px;
+    color: purple;
+    text-align: center;
+}
+
+.team .card .box h5
+{
+    font-size: 16px;
+    font-family: sans-serif;
+    font-weight: 600;
+    color: black;
+    text-align: center;
+    margin: 0px 0px 15px;
+
+}
+
+.team .card .box p
+{
+    color: black;
+    font-size: 15px;
+    font-family: sans-serif;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+    padding: 0px 20px;
+}
+
+/* responsive */
+@media(max-width: 991px){
+    .team .card{
+        width: 50%;
+        margin-bottom: 30px;
+    }
+}
+
+@media(max-width: 550px){
+    .team .card{
+        width: 100%;
+    }
+}
+
+/* about cards */
+.col-md-4 .card 
+{
+    width: 100%;
+    /* float: left; */
+    padding: 10px 15px;
+}
+.col-md-4 .card .box
+{
+    padding: 20px;
+    background-color: plum;
+    border-radius: 7px;
+    transition: margin 1s ease,box-shadow 1s ease;
+}
+.col-md-4 .card .box-img
+{
+    width: 100%;
+    display: block;
+    margin: 8px auto;
+    border-radius: 80%;
+    align-self: center;
+}
+
+/* book img */
+.col-sm-12 img
+{
+    width: 250px;
+    display: block;
+    margin: 0.7px auto;
+    border-radius: 70%;
+    min-height: 50vh;
+}
+
+.col-sm-12 span
+{
+    text-align: center;
+    font-size: 17px;
+    font-weight: bold;
+    font-style: italic;
+    font-family: serif;
+    padding-top: 20px;
+    color: black;
+}
+.form {
+    text-align: center;
+    color: black;
+    font-size: 20px;
+    font-weight: 250;
+    font-family: serif;
+    padding-top: 20px;
+    padding-bottom: 50px;
+    padding-right: 20px;
+    padding-left: 20px;
+    background-color: rgb(229, 235, 210);
+}
+
+.left-contact {
+    display: inline-flex;
+}
+
+.blog {
+    padding: 0 30px;
+}
+
+.flip-card {
+    background-color: white;
+    padding: 5px;
+    border-radius: 10px;
+    width: 100%;
+    height: 250px;
+    /* border: 1px solid #f1f1f1; */
+    perspective: 1000px;
+  }
+  
+  /* This container is needed to position the front and back side */
+  .flip-card-inner {
+    position: relative;
+    border-radius: 10px;
+    width: 100%;
+    height: 250px;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  /* Position the front and back side */
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 250px;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+    border-radius: 10px;
+  }
+  
+  /* Style the front side (fallback if image is missing) */
+  .flip-card-front {
+    background-color: #bbb;
+    color: black;
+    border-radius: 10px;
+  }
+  
+  /* Style the back side */
+  .flip-card-back {
+    background-color: dodgerblue;
+    color: white;
+    border-radius: 10px;
+    transform: rotateY(180deg);
+  }
+
